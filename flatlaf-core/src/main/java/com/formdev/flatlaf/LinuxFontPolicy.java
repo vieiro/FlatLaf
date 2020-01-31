@@ -69,7 +69,7 @@ class LinuxFontPolicy
 				} catch( NumberFormatException ex ) {
 					// ignore
 				}
-			} else
+			} else if (! word.contains("="))
 				family = family.isEmpty() ? word : (family + ' ' + word);
 		}
 
